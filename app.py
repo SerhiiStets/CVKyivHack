@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 from math import radians, cos, sin, asin, sqrt
+import maptest
 
 class GpsPoint:
   timestamp = 0.0
@@ -154,11 +155,12 @@ class FrameSequence:
 
 
 def main():
-  path = "data1/10/{}"
+  path = "data1/8/{}"
 
   seq = FrameSequence(path)
 
   place_searcher = ParkPlaceSercher()
+  map_drawer = maptest.MapCreator()
 
   width = 1280
   height = 720
@@ -168,7 +170,8 @@ def main():
 
     place_searcher.add(frame.location)
     place_searcher.parking_spots()
-    
+
+    map_drawer.add_track_dot(frame.location.latitude, frame.location.longitude)
     
 
     processed_image = processImage(frame.image)
