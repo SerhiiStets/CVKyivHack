@@ -39,11 +39,33 @@ class GpsPoint:
 
     return pt
 
-"""
 class ParkPlaceSercher:
   items = [] 
   car_lenght = 20
-  
+  dot = []
+
+  def haversine(lon1, lat1, lon2, lat2):
+    """
+    Calculate the great circle distance between two points 
+    on the earth (specified in decimal degrees)
+    """
+    # convert decimal degrees to radians 
+    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
+    # haversine formula 
+    dlon = lon2 - lon1 
+    dlat = lat2 - lat1 
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a)) 
+    # Radius of earth in kilometers is 6371
+    m = 6371000* c
+    return m
+
+  def center(lan1, lat1, lan2, lat2):
+    pt = GpsPoint()
+    pt.latitude = (lan1 + lan2)/2
+    pt.longitude = (lat1 + lat2)/2
+    return pt    
+
   def __init__(self):
     pass
 
@@ -52,9 +74,16 @@ class ParkPlaceSercher:
 
 
   def parking_spots(self):
+    for i in range(0, len(items)-1):
+      if haversine(items[i], items[i+1])>20:
+        dot.append(center(items[i], items[i+1]))
+
+
+
+
     distance_lenght = haversine()
     if distance_lenghts >= car_lenght:
-    """
+
 
 
 
@@ -86,21 +115,7 @@ class ClosestMap:
       prev_el = v
       index += 1
 
-def haversine(lon1, lat1, lon2, lat2):
-  """
-  Calculate the great circle distance between two points 
-  on the earth (specified in decimal degrees)
-  """
-  # convert decimal degrees to radians 
-  lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-  # haversine formula 
-  dlon = lon2 - lon1 
-  dlat = lat2 - lat1 
-  a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
-  c = 2 * asin(sqrt(a)) 
-  # Radius of earth in kilometers is 6371
-  m = 6371000* c
-  return m
+
 
 def processImage(frame):
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
