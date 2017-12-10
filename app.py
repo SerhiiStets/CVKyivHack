@@ -1,4 +1,3 @@
-
 import cv2
 import numpy as np
 
@@ -111,43 +110,67 @@ def processImage(frame):
 
   return edges
 
+class Frame:
+  timestamp = 0
+  image = []
+  location = []
+  cars = []
+
+class FrameSequence:
+  counter = 0
+
+  def __init__(self, path):
+    self.capture = cv2.VideoCapture(path.format("camera1.avi"))
+    if not self.capture.isOpened():
+      raise "Some nasty shit going here, niggas've stolen files"
+    self.gps_map = ClosestMap(path.format("gps.txt"))
+
+    with open(path.format("camera1.tfd")) as txt:
+      self.timestamps = list(map(lambda x: int(x)/1e6, txt))
+
+
+  def hasFrames(self):
+    return (self.counter != len(self.timestamps))
+
+  def getNextFrame(self):
+    ret, image = self.capture.read()
+    if not ret:
+      raise "Wrong"
+
+    new_frame = Frame()
+    new_frame.image = image
+    new_frame.timestamp = self.timestamps[self.counter]
+    self.counter += 1
+    new_frame.location = self.gps_map[new_frame.timestamp]
+
+    return new_frame
+
+  def __del__(self):
+    self.capture.release()
+    cv2.destroyAllWindows()
+
+
 def main():
-  path = "data1/2/{}"
+  path = "data1/10/{}"
 
-  gps_map = ClosestMap(path.format("gps.txt"))
+  seq = FrameSequence(path)
 
-  capture = cv2.VideoCapture(path.format("camera1.avi"))
+  width = 1280
+  height = 720
 
-  with open(path.format("camera1.tfd")) as txt:
-    # print("dropping {}".format(txt.readline()))
-    # print("dropping {}".format(txt.readline()))
+  while seq.hasFrames():
+    frame = seq.getNextFrame()
 
-    while capture.isOpened():
-      ret, frame = capture.read()
-      if ret:
-        width = 1280
-        height = 720
+    processed_image = processImage(frame.image)
 
-        timestamp = int(txt.readline())/1e6
+    cv2.putText(processed_image, "Timestamp: {}".format(frame.timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255), 2)
+    for i, line in enumerate("{}".format(frame.location).split("\n")):
+      cv2.putText(processed_image, line, (10, 60+i*20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255), 1)
 
-        processed_frame = processImage(frame)
-        location = gps_map[timestamp]
-
-        cv2.putText(processed_frame, "Timestamp: {}".format(timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255), 2)
-
-        for i, line in enumerate("{}".format(location).split("\n")):
-          cv2.putText(processed_frame, line, (10, 60+i*20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255), 1)
-
-        cv2.imshow("frame", processed_frame)
-        key = cv2.waitKey(32) & 0xff
-        if key == ord('q') or key == 27:
-          break
-
-      else:
-        break
-
-  capture.release()
-  cv2.destroyAllWindows()
+    cv2.imshow("frame", processed_image)
+    key = cv2.waitKey(32) & 0xff
+    if key == ord('q') or key == 27:
+      break
 
 if __name__ == '__main__':
-	main()
+  main()
