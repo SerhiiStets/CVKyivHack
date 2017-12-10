@@ -205,10 +205,9 @@ def main():
     place_searcher.parking_spots()
 
     map_drawer.add_track_dot(frame.location.latitude, frame.location.longitude)
-    
 
-    processed_image = processImage(frame.image)
-
+    lane = 2
+    # cv2.putText(processed_image, "Lane {}".format(lane), )
 
     cv2.putText(processed_image, "Timestamp: {}".format(frame.timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255), 2)
     for i, line in enumerate("{}".format(frame.location).split("\n")):
