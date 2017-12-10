@@ -1,3 +1,4 @@
+
 import cv2
 import numpy as np
 
@@ -38,6 +39,26 @@ class GpsPoint:
 
     return pt
 
+"""
+class ParkPlaceSercher:
+  items = [] 
+  car_lenght = 20
+  
+  def __init__(self):
+    pass
+
+  def add(self, n):
+    items.append(n)
+
+
+  def parking_spots(self):
+    distance_lenght = haversine()
+    if distance_lenghts >= car_lenght:
+    """
+
+
+
+
 class ClosestMap:
   items = {}
 
@@ -65,6 +86,21 @@ class ClosestMap:
       prev_el = v
       index += 1
 
+def haversine(lon1, lat1, lon2, lat2):
+  """
+  Calculate the great circle distance between two points 
+  on the earth (specified in decimal degrees)
+  """
+  # convert decimal degrees to radians 
+  lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
+  # haversine formula 
+  dlon = lon2 - lon1 
+  dlat = lat2 - lat1 
+  a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+  c = 2 * asin(sqrt(a)) 
+  # Radius of earth in kilometers is 6371
+  m = 6371000* c
+  return m
 
 def processImage(frame):
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -76,7 +112,7 @@ def processImage(frame):
   return edges
 
 def main():
-  path = "data1/10/{}"
+  path = "data1/2/{}"
 
   gps_map = ClosestMap(path.format("gps.txt"))
 
