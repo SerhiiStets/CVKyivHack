@@ -2,7 +2,7 @@ import gmplot
 import time
 from selenium import webdriver
 import time, threading
-
+from googlemaps import GoogleMaps
 
 class MapCreator:
   items_track_x = []
@@ -47,6 +47,17 @@ class MapCreator:
     if not self.done:
       threading.Timer(1, self.plot).start()
 
+
+
+class Tracer:
+  def __init__(self):
+    gmaps = GoogleMaps(api_key)
+
+  def find_destination(self, x1, y1, x2, y2):
+    destination = gmaps.latlng_to_address(x2, y2)
+    adress = gmaps.latlng_to_address(x1, y1)
+    directions = gmaps.directions(address, destination) 
+    print (directions['Directions']['Distance']['meters'])
 """
 def main():
   x = [50.4235915,50.4240628333]
