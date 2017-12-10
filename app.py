@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 
+from object_detection import CarDetector
+
+
 class GpsPoint:
   timestamp = 0.0
   latitude = 0.0
@@ -118,6 +121,7 @@ class Frame:
   timestamp = 0
   image = []
   location = []
+  boxes = []
   cars = []
 
 class FrameSequence:
@@ -155,9 +159,10 @@ class FrameSequence:
 
 
 def main():
-  path = "data1/10/{}"
+  path = "data1/8/{}"
 
   seq = FrameSequence(path)
+  detector = CarDetector()
 
   width = 1280
   height = 720
@@ -165,14 +170,27 @@ def main():
   while seq.hasFrames():
     frame = seq.getNextFrame()
 
-    processed_image = processImage(frame.image)
+    # processed_image = processImage(frame.image)
+    frame.cars = []
+    frame.boxes = []
+    (frame.boxes, processed_image) = detector.getBoxes(frame.image, width, height)
+    for box in frame.boxes:
+      y1, x1, y2, x2 = box
+      dist = (1-(x2-x1)) ** 4
+      frame.cars.append((box, dist))
 
     cv2.putText(processed_image, "Timestamp: {}".format(frame.timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255), 2)
     for i, line in enumerate("{}".format(frame.location).split("\n")):
       cv2.putText(processed_image, line, (10, 60+i*20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255), 1)
 
+    for box, dist in frame.cars:
+      y1, x1, y2, x2 = box
+      cx = int(width*(x2+x1)/2)
+      cy = int(height*(y2+y1)/2)
+      cv2.putText(processed_image, "{}".format(dist), (cx, cy+10), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255), 2)
+
     cv2.imshow("frame", processed_image)
-    key = cv2.waitKey(32) & 0xff
+    key = cv2.waitKey(1) & 0xff
     if key == ord('q') or key == 27:
       break
 
