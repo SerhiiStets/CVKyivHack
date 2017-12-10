@@ -1,2 +1,9 @@
 data1/*
 __pycache__/*
+protos/*
+utils/*
+*.pyc
+get-pip.*
+geckodriver.log
+geckodriver
+
