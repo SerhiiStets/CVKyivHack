@@ -1,0 +1,657 @@
+1512913492360	geckodriver	INFO	geckodriver 0.19.1
+1512913492362	geckodriver	INFO	Listening on 127.0.0.1:36417
+1512913493451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JPtQDNBl2KKZ"
+1512913494061	Marionette	INFO	Enabled via --marionette
+1512913495387	Marionette	INFO	Listening on port 38588
+1512913495490	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512913495542	Marionette	DEBUG	Register listener.js for window 2147483649
+1512913495568	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512913495582	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512913495582	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512913495583	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512913495771	Marionette	DEBUG	Register listener.js for window 4294967297
+1512913495809	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512913495848	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "about:neterror?e=fileNotFound&u=file%3A///tmp/mymap.html&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20find%20the%20file%20at%20/tmp/mymap.html."
+1512913636550	geckodriver	INFO	geckodriver 0.19.1
+1512913636552	geckodriver	INFO	Listening on 127.0.0.1:56999
+1512913637640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.lvUrP4XKCk2a"
+1512913638050	Marionette	INFO	Enabled via --marionette
+1512913639256	Marionette	INFO	Listening on port 41382
+1512913639351	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512913639400	Marionette	DEBUG	Register listener.js for window 2147483649
+1512913639429	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512913639443	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512913639443	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512913639444	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512913639632	Marionette	DEBUG	Register listener.js for window 4294967297
+1512913639672	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512913639684	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913639691	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913640711	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913640717	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913640718	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913641049	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913641327	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913642340	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913642345	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913642346	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913642476	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913642573	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913643582	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913643584	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913643584	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913643670	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913643750	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913644761	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913644766	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913644767	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913644930	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913645032	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913646043	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913646048	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913646048	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913646156	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913646241	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913647264	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913647267	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913647267	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913647348	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913647484	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913648498	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913648504	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913648504	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913648648	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913648753	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913649766	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913649774	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913649775	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913649926	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913650105	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913651118	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913651122	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913651123	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913651217	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913651364	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512913652376	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512913652379	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512913652379	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512913652501	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512913652604	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512914205869	geckodriver	INFO	geckodriver 0.19.1
+1512914205872	geckodriver	INFO	Listening on 127.0.0.1:34721
+1512914206954	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.sTAekcBukhcO"
+1512914207361	Marionette	INFO	Enabled via --marionette
+1512914208539	Marionette	INFO	Listening on port 45875
+1512914208566	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512914208615	Marionette	DEBUG	Register listener.js for window 2147483649
+1512914208634	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512914208648	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512914208648	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512914208649	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512914208834	Marionette	DEBUG	Register listener.js for window 4294967297
+1512914208872	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512914208882	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914208886	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512914209905	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512914209910	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512914209910	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512914210178	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914210416	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512914211429	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512914211434	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512914211435	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512914211537	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914211639	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512914212649	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512914212652	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512914212652	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512914213179	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914213305	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512914214316	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512914214321	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512914214321	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512914214439	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914214544	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 7729, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512914253014	geckodriver	INFO	geckodriver 0.19.1
+1512914253017	geckodriver	INFO	Listening on 127.0.0.1:59987
+1512914254106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LeNERV1gc9su"
+1512914254517	Marionette	INFO	Enabled via --marionette
+1512914255704	Marionette	INFO	Listening on port 40906
+1512914255725	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512914255775	Marionette	DEBUG	Register listener.js for window 2147483649
+1512914255795	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512914255819	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512914255819	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512914255820	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512914256011	Marionette	DEBUG	Register listener.js for window 4294967297
+1512914256050	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512914256060	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914256065	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512914257084	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512914257089	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512914257090	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512914257393	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914257633	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512914258646	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512914258651	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512914258652	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512914258778	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914258910	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512914259922	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512914259924	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512914259924	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512914260013	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512914260092	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512914964974	geckodriver	INFO	geckodriver 0.19.1
+1512914964976	geckodriver	INFO	Listening on 127.0.0.1:44593
+1512914966058	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.EoaXQKWXjrZe"
+1512914966468	Marionette	INFO	Enabled via --marionette
+1512914967647	Marionette	INFO	Listening on port 39341
+1512914967666	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512914967714	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512915041789	geckodriver	INFO	geckodriver 0.19.1
+1512915041791	geckodriver	INFO	Listening on 127.0.0.1:50905
+1512915042881	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.mitjamGMgMSk"
+1512915043309	Marionette	INFO	Enabled via --marionette
+1512915044481	Marionette	INFO	Listening on port 34943
+1512915044489	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512915044537	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512915084061	geckodriver	INFO	geckodriver 0.19.1
+1512915084063	geckodriver	INFO	Listening on 127.0.0.1:51446
+1512915085153	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MZt6wOQVhnfo"
+1512915085565	Marionette	INFO	Enabled via --marionette
+1512915086660	Marionette	INFO	Listening on port 34206
+1512915086770	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512915086818	Marionette	DEBUG	Register listener.js for window 2147483649
+1512915086830	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512915086844	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512915086844	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512915086845	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512915087032	Marionette	DEBUG	Register listener.js for window 4294967297
+1512915087069	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512915087549	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512915087845	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512915408426	geckodriver	INFO	geckodriver 0.19.1
+1512915408429	geckodriver	INFO	Listening on 127.0.0.1:60394
+1512915409517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jEz8dmHOaUUh"
+1512915409895	Marionette	INFO	Enabled via --marionette
+1512915411080	Marionette	INFO	Listening on port 44297
+1512915411129	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512915411177	Marionette	DEBUG	Register listener.js for window 2147483649
+1512915411200	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512915411214	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512915411214	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512915411215	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512915411398	Marionette	DEBUG	Register listener.js for window 4294967297
+1512915411435	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512915411720	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512915412206	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512915592007	geckodriver	INFO	geckodriver 0.19.1
+1512915592009	geckodriver	INFO	Listening on 127.0.0.1:58990
+1512915593095	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rjU7lcFFM7N5"
+1512915593508	Marionette	INFO	Enabled via --marionette
+1512915594628	Marionette	INFO	Listening on port 45443
+1512915594709	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512915594755	Marionette	DEBUG	Register listener.js for window 2147483649
+1512915594777	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512915594790	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512915594790	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512915594790	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512915594987	Marionette	DEBUG	Register listener.js for window 4294967297
+1512915595027	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512915595347	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512915595617	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512915739303	geckodriver	INFO	geckodriver 0.19.1
+1512915739306	geckodriver	INFO	Listening on 127.0.0.1:47802
+1512915740389	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WMyw2gnbTfOL"
+1512915740786	Marionette	INFO	Enabled via --marionette
+1512915742023	Marionette	INFO	Listening on port 38571
+1512915742095	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512915742142	Marionette	DEBUG	Register listener.js for window 2147483649
+1512915742159	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512915742172	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512915742172	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512915742173	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512915742353	Marionette	DEBUG	Register listener.js for window 4294967297
+1512915742389	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512915742714	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512915742947	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512915766099	geckodriver	INFO	geckodriver 0.19.1
+1512915766102	geckodriver	INFO	Listening on 127.0.0.1:40298
+1512915767193	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YUsfEIQV3BjR"
+1512915767592	Marionette	INFO	Enabled via --marionette
+1512915768735	Marionette	INFO	Listening on port 46382
+1512915768808	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512915768855	Marionette	DEBUG	Register listener.js for window 2147483649
+1512915768885	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512915768897	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512915768897	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512915768898	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512915769090	Marionette	DEBUG	Register listener.js for window 4294967297
+1512915769127	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512915769453	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512915769698	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512915788367	geckodriver	INFO	geckodriver 0.19.1
+1512915788370	geckodriver	INFO	Listening on 127.0.0.1:52828
+1512915789456	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.s5OY17qOZdoC"
+1512915789861	Marionette	INFO	Enabled via --marionette
+1512915791074	Marionette	INFO	Listening on port 32893
+1512915791163	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512915791222	Marionette	DEBUG	Register listener.js for window 2147483649
+1512915791240	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512915791252	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512915791253	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512915791254	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512915791449	Marionette	DEBUG	Register listener.js for window 4294967297
+1512915791491	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512915791782	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512915792055	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512916513795	geckodriver	INFO	geckodriver 0.19.1
+1512916513798	geckodriver	INFO	Listening on 127.0.0.1:38343
+1512916514887	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Kjue70miLOiH"
+1512916515293	Marionette	INFO	Enabled via --marionette
+1512916516424	Marionette	INFO	Listening on port 42046
+1512916516495	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512916516544	Marionette	DEBUG	Register listener.js for window 2147483649
+1512916516561	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512916516587	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512916516587	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512916516587	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512916516776	Marionette	DEBUG	Register listener.js for window 4294967297
+1512916516813	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512916516822	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512916516827	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512916778628	geckodriver	INFO	geckodriver 0.19.1
+1512916778631	geckodriver	INFO	Listening on 127.0.0.1:37343
+1512916779721	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.CfKoGuBeksx2"
+1512916780118	Marionette	INFO	Enabled via --marionette
+1512916781310	Marionette	INFO	Listening on port 45201
+1512916781331	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512916781381	Marionette	DEBUG	Register listener.js for window 2147483649
+1512916781405	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512916781422	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512916781422	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512916781423	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512916781612	Marionette	DEBUG	Register listener.js for window 4294967297
+1512916781649	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512916781658	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512916781663	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512916865709	geckodriver	INFO	geckodriver 0.19.1
+1512916865712	geckodriver	INFO	Listening on 127.0.0.1:53450
+1512916866803	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.OJXeu36Ilnqr"
+1512916867217	Marionette	INFO	Enabled via --marionette
+1512916868343	Marionette	INFO	Listening on port 38293
+1512916868416	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512916868464	Marionette	DEBUG	Register listener.js for window 2147483649
+1512916868480	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512916868496	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512916868496	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512916868497	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512916868689	Marionette	DEBUG	Register listener.js for window 4294967297
+1512916868729	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512916868739	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512916868744	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512916938451	geckodriver	INFO	geckodriver 0.19.1
+1512916938454	geckodriver	INFO	Listening on 127.0.0.1:54643
+1512916939542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MUU2c6cVnrO8"
+1512916939981	Marionette	INFO	Enabled via --marionette
+1512916941112	Marionette	INFO	Listening on port 40483
+1512916941179	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512916941225	Marionette	DEBUG	Register listener.js for window 2147483649
+1512916941245	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512916941260	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512916941260	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512916941261	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512916941457	Marionette	DEBUG	Register listener.js for window 4294967297
+1512916941493	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512916941503	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512916941508	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512916971187	geckodriver	INFO	geckodriver 0.19.1
+1512916971189	geckodriver	INFO	Listening on 127.0.0.1:53748
+1512916972303	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.p7W2l4P1czwM"
+1512916972710	Marionette	INFO	Enabled via --marionette
+1512916973890	Marionette	INFO	Listening on port 34742
+1512916973911	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512916973959	Marionette	DEBUG	Register listener.js for window 2147483649
+1512916973973	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512916974003	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512916974003	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512916974003	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512916974194	Marionette	DEBUG	Register listener.js for window 4294967297
+1512916974231	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512916974240	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512916974245	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512916975265	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512916975272	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512916975272	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512916975520	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512916975790	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512917054812	geckodriver	INFO	geckodriver 0.19.1
+1512917054814	geckodriver	INFO	Listening on 127.0.0.1:49419
+1512917055903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.leW4FeeAvLns"
+1512917056301	Marionette	INFO	Enabled via --marionette
+1512917057417	Marionette	INFO	Listening on port 39994
+1512917057516	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512917057568	Marionette	DEBUG	Register listener.js for window 2147483649
+1512917057592	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512917057605	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512917057605	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512917057605	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512917057797	Marionette	DEBUG	Register listener.js for window 4294967297
+1512917057837	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512917057850	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917057857	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917058876	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917058879	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917058879	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917059727	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917060304	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512917107995	geckodriver	INFO	geckodriver 0.19.1
+1512917107997	geckodriver	INFO	Listening on 127.0.0.1:55153
+1512917109080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.8MoT7Ry4BJwf"
+1512917109486	Marionette	INFO	Enabled via --marionette
+1512917110574	Marionette	INFO	Listening on port 36414
+1512917110592	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512917110639	Marionette	DEBUG	Register listener.js for window 2147483649
+1512917110667	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512917110690	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512917110691	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512917110692	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512917110888	Marionette	DEBUG	Register listener.js for window 4294967297
+1512917110927	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512917110936	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917110941	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917111957	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917111962	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917111962	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917112196	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917112419	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512917154178	geckodriver	INFO	geckodriver 0.19.1
+1512917154180	geckodriver	INFO	Listening on 127.0.0.1:59361
+1512917155263	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.TyDsfdFGVbX8"
+1512917155677	Marionette	INFO	Enabled via --marionette
+1512917156816	Marionette	INFO	Listening on port 43816
+1512917156877	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512917156926	Marionette	DEBUG	Register listener.js for window 2147483649
+1512917156941	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512917156958	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512917156958	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512917156959	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+[Parent 13385, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1512917157154	Marionette	DEBUG	Register listener.js for window 4294967297
+1512917157193	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512917157207	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917157208	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917158228	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917158233	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917158233	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917158520	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917159012	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917160023	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917160027	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917160027	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917160134	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917160305	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917161315	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917161317	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917161317	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917161394	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917161548	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917162556	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917162560	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917162560	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917162660	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917162831	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917163850	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917163857	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917163857	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917163953	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917164115	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917165127	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917165130	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917165130	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917165214	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917165370	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917166379	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917166381	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917166381	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917166469	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917166628	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917167638	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917167642	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917167642	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917167717	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917167884	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917168895	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917168900	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917168900	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917169016	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917169237	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917170244	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917170248	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917170248	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917170438	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917170869	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512917203954	geckodriver	INFO	geckodriver 0.19.1
+1512917203957	geckodriver	INFO	Listening on 127.0.0.1:54049
+1512917205047	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.RugIkNHusCK3"
+1512917205456	Marionette	INFO	Enabled via --marionette
+1512917206585	Marionette	INFO	Listening on port 40770
+1512917206674	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512917206733	Marionette	DEBUG	Register listener.js for window 2147483649
+1512917206752	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512917206772	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512917206772	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512917206773	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512917206971	Marionette	DEBUG	Register listener.js for window 4294967297
+1512917207009	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512917207023	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917207024	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917208044	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917208049	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917208049	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917208353	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917208833	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917224759	geckodriver	INFO	geckodriver 0.19.1
+1512917224762	geckodriver	INFO	Listening on 127.0.0.1:41874
+1512917225850	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.6sHtRKFQb9pW"
+1512917226240	Marionette	INFO	Enabled via --marionette
+1512917227384	Marionette	INFO	Listening on port 46078
+1512917227466	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512917227515	Marionette	DEBUG	Register listener.js for window 2147483649
+1512917227531	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512917227551	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512917227551	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512917227552	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512917227743	Marionette	DEBUG	Register listener.js for window 4294967297
+1512917227779	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512917227788	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917227793	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917228810	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917228813	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917228813	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917229059	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917229547	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917230553	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917230555	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917230556	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917230661	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917230837	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917231845	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917231848	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917231848	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917231929	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917232082	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917233092	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917233095	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917233095	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917233191	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917233346	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917234355	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917234360	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917234361	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917234451	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917234604	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917235615	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917235618	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917235618	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917235700	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917235852	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917236871	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917236874	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917236874	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917237045	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917237366	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917238423	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917238426	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917238426	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917238541	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917238727	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917239737	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917239740	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917239741	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917239831	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917240001	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917241014	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917241017	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917241017	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917241114	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917241274	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917242284	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917242289	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917242289	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917242400	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1512917357200	geckodriver	INFO	geckodriver 0.19.1
+1512917357203	geckodriver	INFO	Listening on 127.0.0.1:49553
+1512917358291	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.l3v30QESUdIm"
+1512917358698	Marionette	INFO	Enabled via --marionette
+1512917359825	Marionette	INFO	Listening on port 33230
+1512917359916	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512917359963	Marionette	DEBUG	Register listener.js for window 2147483649
+1512917359979	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512917360005	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512917360005	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512917360006	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512917360194	Marionette	DEBUG	Register listener.js for window 4294967297
+1512917360232	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512917360242	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917360246	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917361266	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917361272	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917361272	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917361528	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917362040	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917363046	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917363048	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917363049	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917363131	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917363290	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917364301	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917364304	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917364305	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917364382	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917365162	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917366172	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917366177	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917366178	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917366266	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917366424	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917394730	geckodriver	INFO	geckodriver 0.19.1
+1512917394733	geckodriver	INFO	Listening on 127.0.0.1:49645
+1512917395823	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.tSIhRke1IWtQ"
+1512917396223	Marionette	INFO	Enabled via --marionette
+1512917397347	Marionette	INFO	Listening on port 44878
+1512917397432	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512917397485	Marionette	DEBUG	Register listener.js for window 2147483649
+1512917397502	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512917397522	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512917397522	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512917397523	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1512917397716	Marionette	DEBUG	Register listener.js for window 4294967297
+1512917397754	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1512917397764	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917397769	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917398786	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917398789	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917398789	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917399033	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917399290	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917400300	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917400303	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917400304	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917400383	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917400471	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917401481	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917401483	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917401483	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917401572	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917401654	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+1512917402663	Marionette	DEBUG	Received DOM event "beforeunload" for "file:///tmp/mymap.html"
+1512917402665	Marionette	DEBUG	Received DOM event "pagehide" for "file:///tmp/mymap.html"
+1512917402665	Marionette	DEBUG	Received DOM event "unload" for "file:///tmp/mymap.html"
+1512917402745	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///tmp/mymap.html"
+1512917402831	Marionette	DEBUG	Received DOM event "pageshow" for "file:///tmp/mymap.html"
+[Child 14491, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+Sandbox: Unexpected EOF, op 0 flags 0302 path /dev/shm/org.chromium.82zMl3

@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import maptest
 from math import radians, cos, sin, asin, sqrt, pi
 
 from object_detection import CarDetector
@@ -183,6 +184,7 @@ def main():
   detector = CarDetector()
 
   place_searcher = ParkPlaceSercher()
+  map_drawer = maptest.MapCreator()
 
   width = 1280
   height = 720
@@ -201,6 +203,12 @@ def main():
 
     place_searcher.add(frame.location)
     place_searcher.parking_spots()
+
+    map_drawer.add_track_dot(frame.location.latitude, frame.location.longitude)
+    
+
+    processed_image = processImage(frame.image)
+
 
     cv2.putText(processed_image, "Timestamp: {}".format(frame.timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255), 2)
     for i, line in enumerate("{}".format(frame.location).split("\n")):

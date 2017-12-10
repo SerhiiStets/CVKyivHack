@@ -1,24 +1,59 @@
 import gmplot
 import time
 from selenium import webdriver
+import time, threading
 
-gmap = gmplot.GoogleMapPlotter(50.4235915,30.4738741667, 16)
 
-path = "/tmp/mymap.html"
-driver = webdriver.Firefox()
-driver.get("file://{}".format(path))
+class MapCreator:
+  items_track_x = []
+  items_track_y = []
+  items_markers_x = []
+  items_markers_y = []
+  x = 0
+  y = 0
+  path = "/tmp/mymap.html"
 
-latitudes = [50.4235915,50.4240628333]
-longitudes = [30.4738741667, 30.4754195]
+  def __init__(self):   
+    
+    with open(self.path, "w") as f:
+      f.write("map")
 
-for i in range(10):
-  latitudes.append(latitudes[-1]+0.0001)
-  longitudes.append(longitudes[-1]+0.0001)
-  gmap.plot(latitudes, longitudes, 'cornflowerblue', edge_width=10)
-  # gmap.scatter(latitudes, longitudes, 'k', marker=True)
-  gmap.draw(path)
-  time.sleep(1)
-  driver.refresh()
+    self.driver = webdriver.Firefox()
+    self.driver.get("file://{}".format(self.path))
+    threading.Timer(1, self.plot).start()
+
+
+  def add_track_dot(self, x, y):
+    self.items_track_x.append(x)
+    self.items_track_y.append(y)
+    print(self.x)
+    self.x = x
+    self.y = y
+
+  def add_marker_dot(self, x, y):
+    self.items_markers_x.append(x)
+    self.items_markers_y.append(y)
+
+
+  def plot(self):
+    gmap = gmplot.GoogleMapPlotter(self.x, self.y, 16)
+    gmap.plot(self.items_track_x, self.items_track_y, 'cornflowerblue', edge_width=10)
+    gmap.scatter(self.items_markers_x, self.items_markers_y, '#3B0B39', size=40, marker=False)
+    gmap.draw(self.path)
+    self.driver.refresh()
+    #print(self.items_track_x)
+    threading.Timer(1, self.plot).start()
+
+"""
+def main():
+  x = [50.4235915,50.4240628333]
+  y = [30.4738741667, 30.4754195]
+  map_creator = MapCreator(x, y)
+
+  #map_creator.createTrack(x, y)
+if __name__ == "__main__":
+  main()
+"""
 
   # gmap.scatter(latitudes, longitudes, '#3B0B39', size=40, marker=False)
   # gmap.scatter(more_lats, more_lngs, '#3B0B39', size=40, marker=False)
