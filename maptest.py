@@ -12,6 +12,7 @@ class MapCreator:
   x = 0
   y = 0
   path = "/tmp/mymap.html"
+  done = False
 
   def __init__(self):   
     
@@ -20,13 +21,14 @@ class MapCreator:
 
     self.driver = webdriver.Firefox()
     self.driver.get("file://{}".format(self.path))
+    self.driver.set_window_size(480, 480)
+    self.driver.set_window_position(0, 768-480)
     threading.Timer(1, self.plot).start()
 
 
   def add_track_dot(self, x, y):
     self.items_track_x.append(x)
     self.items_track_y.append(y)
-    print(self.x)
     self.x = x
     self.y = y
 
@@ -36,13 +38,14 @@ class MapCreator:
 
 
   def plot(self):
-    gmap = gmplot.GoogleMapPlotter(self.x, self.y, 16)
+    gmap = gmplot.GoogleMapPlotter(self.x, self.y, 18)
     gmap.plot(self.items_track_x, self.items_track_y, 'cornflowerblue', edge_width=10)
-    gmap.scatter(self.items_markers_x, self.items_markers_y, '#3B0B39', size=40, marker=False)
+    gmap.scatter(self.items_markers_x, self.items_markers_y, '#3B0B39', size=5, marker=False)
     gmap.draw(self.path)
     self.driver.refresh()
     #print(self.items_track_x)
-    threading.Timer(1, self.plot).start()
+    if not self.done:
+      threading.Timer(1, self.plot).start()
 
 """
 def main():

@@ -55,8 +55,8 @@ class GpsPoint:
 
     pt = GpsPoint()
     # OffsetPosition, decimal degrees
-    pt.latitude = lat + dLat * 180 / pi
-    pt.longitude = lon + dLon * 180 / pi
+    pt.latitude = self.latitude + dLat * 180 / pi
+    pt.longitude = self.longitude + dLon * 180 / pi
     pt.timestamp = self.timestamp
 
     return pt
@@ -178,7 +178,7 @@ class FrameSequence:
 
 
 def main():
-  path = "data1/8/{}"
+  path = "data1/1/{}"
 
   seq = FrameSequence(path)
   detector = CarDetector()
@@ -186,11 +186,13 @@ def main():
   place_searcher = ParkPlaceSercher()
   map_drawer = maptest.MapCreator()
 
-  width = 1280
-  height = 720
+  scale = 0.5
+  width = int(1280*scale)
+  height = int(720*scale)
 
   while seq.hasFrames():
     frame = seq.getNextFrame()
+    frame.image = cv2.resize(frame.image, (width, height), interpolation = cv2.INTER_CUBIC)
 
     # processed_image = processImage(frame.image)
     frame.cars = []
@@ -207,22 +209,27 @@ def main():
     map_drawer.add_track_dot(frame.location.latitude, frame.location.longitude)
 
     lane = 2
-    # cv2.putText(processed_image, "Lane {}".format(lane), )
+    cv2.putText(processed_image, "Lane {}".format(lane), (int(width/2), height - 50), cv2.FONT_HERSHEY_SIMPLEX, 2.0, (255, 50, 50), 2)
 
-    cv2.putText(processed_image, "Timestamp: {}".format(frame.timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255), 2)
+    # processed_image[:200, :200] = (processed_image[:200, :200] * 0.5).astype(np.uint8)
+    cv2.putText(processed_image, "Timestamp: {}".format(frame.timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (50, 50, 255), 2)
     for i, line in enumerate("{}".format(frame.location).split("\n")):
-      cv2.putText(processed_image, line, (10, 60+i*20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255), 1)
+      cv2.putText(processed_image, line, (10, 60+i*20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (50, 50, 255), 1)
 
     for box, dist in frame.cars:
       y1, x1, y2, x2 = box
       cx = int(width*(x2+x1)/2)
       cy = int(height*(y2+y1)/2)
       cv2.putText(processed_image, "{}".format(dist), (cx-50, cy+20), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255), 2)
+      car_dot = frame.location.offset(dist, frame.location.orientation*pi/180 + pi/2)
+      map_drawer.add_marker_dot(frame.location.latitude, frame.location.longitude)
 
     cv2.imshow("frame", processed_image)
     key = cv2.waitKey(1) & 0xff
     if key == ord('q') or key == 27:
       break
+
+  map_drawer.done = True
 
 if __name__ == '__main__':
   main()
