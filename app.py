@@ -66,25 +66,14 @@ class ParkPlaceSercher:
     pt.longitude = (lat1 + lat2)/2
     return pt    
 
-  def __init__(self):
-    pass
-
   def add(self, n):
     items.append(n)
 
 
   def parking_spots(self):
     for i in range(0, len(items)-1):
-      if haversine(items[i], items[i+1])>20:
-        dot.append(center(items[i], items[i+1]))
-
-
-
-
-    distance_lenght = haversine()
-    if distance_lenghts >= car_lenght:
-
-
+      if haversine(items[i].latitude, items[i].longitude, items[i+1].latitude, items[i+1].longitude)>20:
+        dot.append(center(items[i].latitude, items[i].longitude, items[i+1].latitude, items[i+1].longitude))
 
 
 
