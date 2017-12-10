@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from math import radians, cos, sin, asin, sqrt
 
 class GpsPoint:
   timestamp = 0.0
@@ -39,40 +40,38 @@ class GpsPoint:
     return pt
 
 class ParkPlaceSercher:
-  items = [] 
-  car_lenght = 20
-  dot = []
+  def __init__(self):
+    self.items = []
+    self.dot = []
+    self.car_lenght = 20 
+      
 
-  def haversine(lon1, lat1, lon2, lat2):
-    """
-    Calculate the great circle distance between two points 
-    on the earth (specified in decimal degrees)
-    """
-    # convert decimal degrees to radians 
+  def haversine(self, lon1, lat1, lon2, lat2):
     lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-    # haversine formula 
     dlon = lon2 - lon1 
     dlat = lat2 - lat1 
     a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
     c = 2 * asin(sqrt(a)) 
-    # Radius of earth in kilometers is 6371
     m = 6371000* c
     return m
 
-  def center(lan1, lat1, lan2, lat2):
+  def center(self, lan1, lat1, lan2, lat2):
     pt = GpsPoint()
     pt.latitude = (lan1 + lan2)/2
     pt.longitude = (lat1 + lat2)/2
     return pt    
 
   def add(self, n):
-    items.append(n)
+    
+    self.items.append(n)  
 
 
   def parking_spots(self):
-    for i in range(0, len(items)-1):
-      if haversine(items[i].latitude, items[i].longitude, items[i+1].latitude, items[i+1].longitude)>20:
-        dot.append(center(items[i].latitude, items[i].longitude, items[i+1].latitude, items[i+1].longitude))
+    for i in range(0, len(self.items)-1):
+
+      if (self.haversine(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude)) > 0.1:
+        self.dot.append(self.center(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude))
+
 
 
 
@@ -159,11 +158,18 @@ def main():
 
   seq = FrameSequence(path)
 
+  place_searcher = ParkPlaceSercher()
+
   width = 1280
   height = 720
 
   while seq.hasFrames():
     frame = seq.getNextFrame()
+
+    place_searcher.add(frame.location)
+    place_searcher.parking_spots()
+    
+    
 
     processed_image = processImage(frame.image)
 
