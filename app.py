@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import maptest
 from math import radians, cos, sin, asin, sqrt, pi
+import time
 
 from object_detection import CarDetector
 
@@ -191,6 +192,8 @@ def main():
   width = int(1280*scale)
   height = int(720*scale)
 
+  now = time.time()
+
   while seq.hasFrames():
     frame = seq.getNextFrame()
     frame.image = cv2.resize(frame.image, (width, height), interpolation = cv2.INTER_CUBIC)
@@ -230,6 +233,8 @@ def main():
       map_drawer.free_places_x.append(pt.latitude)
       map_drawer.free_places_y.append(pt.longitude)
 
+    print("Loop time: {}".format(time.time() - now))
+    now = time.time()
     cv2.imshow("frame", processed_image)
     key = cv2.waitKey(1) & 0xff
     if key == ord('q') or key == 27:
