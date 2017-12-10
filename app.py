@@ -64,7 +64,6 @@ class GpsPoint:
 class ParkPlaceSercher:
   def __init__(self):
     self.items = []
-    self.dot = []
     self.car_lenght = 20 
       
 
@@ -89,10 +88,12 @@ class ParkPlaceSercher:
 
 
   def parking_spots(self):
+    dot = []
     for i in range(0, len(self.items)-1):
 
-      if (self.haversine(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude)) > 0.1:
-        self.dot.append(self.center(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude))
+      if (self.haversine(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude)) > 12:
+        dot.append(self.center(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude))
+    return dot
 
 
 
@@ -186,7 +187,7 @@ def main():
   place_searcher = ParkPlaceSercher()
   map_drawer = maptest.MapCreator()
 
-  scale = 0.5
+  scale = 0.7
   width = int(1280*scale)
   height = int(720*scale)
 
@@ -202,9 +203,6 @@ def main():
       y1, x1, y2, x2 = box
       dist = (1-(x2-x1))**3 * 5
       frame.cars.append((box, dist))
-
-    place_searcher.add(frame.location)
-    place_searcher.parking_spots()
 
     map_drawer.add_track_dot(frame.location.latitude, frame.location.longitude)
 
@@ -222,7 +220,15 @@ def main():
       cy = int(height*(y2+y1)/2)
       cv2.putText(processed_image, "{}".format(dist), (cx-50, cy+20), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255), 2)
       car_dot = frame.location.offset(dist, frame.location.orientation*pi/180 + pi/2)
-      map_drawer.add_marker_dot(frame.location.latitude, frame.location.longitude)
+      map_drawer.add_marker_dot(car_dot.latitude, car_dot.longitude)
+      place_searcher.add(car_dot)
+
+    places = place_searcher.parking_spots()
+    map_drawer.free_places_x = []
+    map_drawer.free_places_y = []
+    for pt in places:
+      map_drawer.free_places_x.append(pt.latitude)
+      map_drawer.free_places_y.append(pt.longitude)
 
     cv2.imshow("frame", processed_image)
     key = cv2.waitKey(1) & 0xff

@@ -9,6 +9,10 @@ class MapCreator:
   items_track_y = []
   items_markers_x = []
   items_markers_y = []
+
+  free_places_x = []
+  free_places_y = []
+
   x = 0
   y = 0
   path = "/tmp/mymap.html"
@@ -36,16 +40,26 @@ class MapCreator:
     self.items_markers_x.append(x)
     self.items_markers_y.append(y)
 
+  def add_free_dot(self, x, y):
+    self.free_places_x.append(x)
+    self.free_places_y.append(y)
+
 
   def plot(self):
     gmap = gmplot.GoogleMapPlotter(self.x, self.y, 18)
-    gmap.plot(self.items_track_x, self.items_track_y, 'cornflowerblue', edge_width=10)
-    gmap.scatter(self.items_markers_x, self.items_markers_y, '#3B0B39', size=5, marker=False)
+    gmap.plot(self.items_track_x, self.items_track_y, 'cornflowerblue', edge_width=5)
+    # gmap.s12catter(self.items_markers_x, self.items_markers_y, '#3B0B39', size=5, marker=False)
+    gmap.scatter(self.free_places_x, self.free_places_y, 'k', marker=True)
+    gmap.heatmap(self.items_markers_x, self.items_markers_y)
     gmap.draw(self.path)
     self.driver.refresh()
     #print(self.items_track_x)
     if not self.done:
       threading.Timer(1, self.plot).start()
+    else:
+      pass
+      # time.sleep(3)
+      # self.driver.close()
 
 """
 def main():
