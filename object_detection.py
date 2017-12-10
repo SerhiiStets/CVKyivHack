@@ -132,7 +132,7 @@ class CarDetector:
     for i in range(len(boxes[0])):
       box = boxes[0][i]
       if box[1] > 0.5:
-        if box[3]-box[1] > 0.2 and scores[0][i] > 0.4 and (
+        if box[3]-box[1] > 0.1 and scores[0][i] > 0.4 and (
             int(classes[0][i]) == 3 or int(classes[0][i]) == 6 or int(classes[0][i]) == 8):
           new_boxes.append(box)
           new_classes.append(classes[0][i])
@@ -151,15 +151,16 @@ class CarDetector:
     #     use_normalized_coordinates=True,
     #     line_thickness=8)
 
+    labels = {3: "Car", 6: "Bus", 8: "Truck"}
     # print(new_boxes)
     for i in range(len(new_boxes)):
       ly, lx, hy, hx = new_boxes[i]
       cx = (hx+lx)/2
       cy = (hy+ly)/2
-      cv2.putText(image_np, "{}".format(new_classes[i]),
-                  (int(cx*width), int(cy*height)), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 255), 1)
+      cv2.putText(image_np, "{}".format(labels[new_classes[i]]),
+                  (int(cx*width-50), int(cy*height-30)), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255), 2)
       cv2.rectangle(image_np, (int(lx*width), int(ly*height)),
-                              (int(hx*width), int(hy*height)), (0, 255, 255), 5)
+                              (int(hx*width), int(hy*height)), (0, 200, 0), 5)
 
     return (new_boxes, image_np)
 

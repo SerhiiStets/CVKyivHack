@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from math import radians, cos, sin, asin, sqrt, pi
 
 from object_detection import CarDetector
 
@@ -41,41 +42,57 @@ class GpsPoint:
 
     return pt
 
-class ParkPlaceSercher:
-  items = [] 
-  car_lenght = 20
-  dot = []
+  def offset(self, meters, direction):
+    e_rad = 6378137
 
-  def haversine(lon1, lat1, lon2, lat2):
-    """
-    Calculate the great circle distance between two points 
-    on the earth (specified in decimal degrees)
-    """
-    # convert decimal degrees to radians 
+    dn = meters * cos(direction)
+    de = meters * sin(direction)
+
+    # Coordinate offsets in radians
+    dLat = dn/e_rad
+    dLon = de/(e_rad*cos(pi*self.latitude/180))
+
+    pt = GpsPoint()
+    # OffsetPosition, decimal degrees
+    pt.latitude = lat + dLat * 180 / pi
+    pt.longitude = lon + dLon * 180 / pi
+    pt.timestamp = self.timestamp
+
+    return pt
+
+class ParkPlaceSercher:
+  def __init__(self):
+    self.items = []
+    self.dot = []
+    self.car_lenght = 20 
+      
+
+  def haversine(self, lon1, lat1, lon2, lat2):
     lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-    # haversine formula 
     dlon = lon2 - lon1 
     dlat = lat2 - lat1 
     a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
     c = 2 * asin(sqrt(a)) 
-    # Radius of earth in kilometers is 6371
-    m = 6371000* c
+    m = 6371000 * c
     return m
 
-  def center(lan1, lat1, lan2, lat2):
+  def center(self, lan1, lat1, lan2, lat2):
     pt = GpsPoint()
     pt.latitude = (lan1 + lan2)/2
     pt.longitude = (lat1 + lat2)/2
     return pt    
 
   def add(self, n):
-    items.append(n)
+    
+    self.items.append(n)  
 
 
   def parking_spots(self):
-    for i in range(0, len(items)-1):
-      if haversine(items[i].latitude, items[i].longitude, items[i+1].latitude, items[i+1].longitude)>20:
-        dot.append(center(items[i].latitude, items[i].longitude, items[i+1].latitude, items[i+1].longitude))
+    for i in range(0, len(self.items)-1):
+
+      if (self.haversine(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude)) > 0.1:
+        self.dot.append(self.center(self.items[i].latitude, self.items[i].longitude, self.items[i+1].latitude, self.items[i+1].longitude))
+
 
 
 
@@ -150,6 +167,7 @@ class FrameSequence:
     new_frame.timestamp = self.timestamps[self.counter]
     self.counter += 1
     new_frame.location = self.gps_map[new_frame.timestamp]
+    # print(new_frame.timestamp)
 
     return new_frame
 
@@ -164,6 +182,8 @@ def main():
   seq = FrameSequence(path)
   detector = CarDetector()
 
+  place_searcher = ParkPlaceSercher()
+
   width = 1280
   height = 720
 
@@ -176,8 +196,11 @@ def main():
     (frame.boxes, processed_image) = detector.getBoxes(frame.image, width, height)
     for box in frame.boxes:
       y1, x1, y2, x2 = box
-      dist = (1-(x2-x1)) ** 4
+      dist = (1-(x2-x1))**3 * 5
       frame.cars.append((box, dist))
+
+    place_searcher.add(frame.location)
+    place_searcher.parking_spots()
 
     cv2.putText(processed_image, "Timestamp: {}".format(frame.timestamp), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255), 2)
     for i, line in enumerate("{}".format(frame.location).split("\n")):
@@ -187,7 +210,7 @@ def main():
       y1, x1, y2, x2 = box
       cx = int(width*(x2+x1)/2)
       cy = int(height*(y2+y1)/2)
-      cv2.putText(processed_image, "{}".format(dist), (cx, cy+10), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255), 2)
+      cv2.putText(processed_image, "{}".format(dist), (cx-50, cy+20), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255), 2)
 
     cv2.imshow("frame", processed_image)
     key = cv2.waitKey(1) & 0xff
