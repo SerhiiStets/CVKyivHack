@@ -68,10 +68,11 @@ class Tracer:
   def find_destination(self, x1, y1, x2, y2):
 
     gmaps = GoogleMaps("AIzaSyAChNKxjgh7MmGPQ6CJOGa_-tjM8giIZe4")
-    destination = gmaps.Client.latlng_to_address(x2, y2)
-    adress = gmaps.Client.latlng_to_address(x1, y1)
-    directions = gmaps.Client.directions(address, destination) 
+    destination = gmaps.latlng_to_address(x2, y2)
+    adress = gmaps.latlng_to_address(x1, y1)
+    directions = gmaps.directions(address, destination)
     print (directions['Directions']['Distance']['meters'])
+
 """
 def main():
   x = [50.4235915,50.4240628333]

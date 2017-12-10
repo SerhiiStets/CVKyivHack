@@ -237,5 +237,11 @@ def main():
 
   map_drawer.done = True
 
+  # way_tracer = maptest.Tracer()
+  # places = place_searcher.parking_spots()
+  # if len(places) > 0:
+  #   way_tracer.find_destination(frame.location.latitude, frame.location.longitude,
+  #     places[0].latitude, places[0].longitude)
+
 if __name__ == '__main__':
   main()
